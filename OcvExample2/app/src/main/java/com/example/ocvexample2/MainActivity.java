@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity
             }
         }
 
-        mOpenCvCameraView = (CameraBridgeViewBase)findViewById(R.id.activity_surface_view);
+        mOpenCvCameraView = findViewById(R.id.activity_surface_view);
         mOpenCvCameraView.setVisibility(SurfaceView.VISIBLE);
         mOpenCvCameraView.setCvCameraViewListener(this);
         mOpenCvCameraView.setCameraIndex(0); // front-camera(1),  back-camera(0)
